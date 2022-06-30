@@ -34,3 +34,12 @@
 // 7 -> да
 // 1 -> нет
 
+Console.Write("Введите день недели: "); // запрашиваем пользователя ввести число
+int day = Convert.ToInt32(Console.ReadLine()); //преобразовывает данные из консоли в целое число
+
+if (day <= 5)
+    Console.WriteLine("Рабочий день>");
+else if (day >= 6)
+    Console.WriteLine("Выходной день>");
+else if (day >= 8)
+    Console.WriteLine("Не вверно веден день недели");  
